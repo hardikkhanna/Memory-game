@@ -1,3 +1,10 @@
+/* This anonymous function will wrap around your app/module's code */
+(function() {
+    'use strict'; // turn on Strict Mode
+
+    /* then start your app/module's code */
+}()); // end of file
+
 var wait = 1;
 var min = 0;
 var sec = 0;
@@ -105,7 +112,7 @@ opencard = function(card) {
                     swal({
                         type: 'success',
                         title: 'Congrats.You did an amanzing job!.',
-                        text: 'You were brave enough to complete the game in just ' + moves + ' moves and ' + stars + ' stars in just ' + hrs + ' hrs ' + min + ' minutes ' + sec + ' sec. If you liked the game and wanna play again tap the button below',
+                        text: 'You have completed the game in ' + moves + ' moves and ' + stars + ' stars in just ' + hrs + ' hrs ' + min + ' minutes ' + sec + ' sec. If you liked the game and wanna play again tap the button below',
                         confirmButtonText: 'I wanna play Again',
                         confirmButtonColor: '#0eb7f7',
                         focusConfirm: true,
@@ -123,11 +130,11 @@ opencard = function(card) {
             wait = 1;
             $('.stopWatch').html('0:0:0');
         }
-        if (moves > 10) {
+        if (moves > 20) {
             $('#star3').hide();
             stars = 2;
         }
-        if (moves > 15) {
+        if (moves > 25) {
             $('#star2').hide();
             stars = 1;
         }

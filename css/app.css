@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-    font-family: 'Lucida Handwriting', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
     font-weight: 300;
 }
 
@@ -58,7 +58,7 @@ h1 {
     font-size: 4px;
     color: #0a0a09;
     border-radius: 8px;
-    cursor: pointer;
+    cursor:ointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +79,7 @@ h1 {
     cursor: default;
     background: #f7fafa;
     font-size: 33px;
+    font-family: "Gloria Hallelujah" ;
 }
 
 /*
